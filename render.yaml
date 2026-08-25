@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: travel-tour-agency
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+    staticPublishPath: .output/public
