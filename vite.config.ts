@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  nitro: {
+    // Override Lovable's default cloudflare-module preset for Node.js deployment on Render
+    preset: "node-server",
+  },
 });

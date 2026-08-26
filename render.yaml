@@ -5,8 +5,7 @@ services:
     region: oregon
     plan: free
     buildCommand: npm install && npm run build
-    startCommand: npm run start
+    startCommand: node .output/server/index.mjs
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
-    staticPublishPath: .output/public
