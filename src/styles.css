@@ -140,6 +140,27 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    min-width: 320px;
+    overflow-x: clip;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p,
+  li,
+  a,
+  button {
+    overflow-wrap: break-word;
   }
 
   h1,
@@ -167,6 +188,25 @@
   margin-inline: auto;
   max-width: 80rem;
   padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-page {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-page {
+    padding-inline: 1rem;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    max-width: 100%;
+  }
 }
 
 /* Modern UI Enhancements */
